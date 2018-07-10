@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal website">
+  <meta name="author" content="Miung-Seong Matthew Chae">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="cv">
+  <title> CV </title>
+  <link href="#" rel="stylesheet">
+  <script src=""></script>
+  <style>
+  .sidenav a {
+    position: relative; /* position them relateive to the browser window */
+    right: 0;
+    margin: 20px;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #111;
+  }
+  </style>
+  <script>
+  var top = $(window).scrollTop();
+  $('.menu').css({position: "absolute"});
+  $(window).scroll(function(){
+    var pos = top + 10;
+    $('.menu').animate({"top": pos}, {duration: 400, easing: 'linear', queue: false});
+  });
+  }
+
+  </script>
+</head>
+  <body>
+    <nav>
+    <div class="sidenav">
+      <a href="#">About</a>
+    </div>
+  </nav>
+  <div style="display: block; width: 100px;">
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  </body>
+</html>
